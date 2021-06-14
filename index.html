@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"></html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>第一个页面</title>
+<link href='http://fonts.googleapis.com/css?family=Cantarell|Oswald' rel='stylesheet' type='text/css'>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="nivo/default.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="prettyphoto/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+
+<script type="text/javascript" src="nivo/jquery-1.6.1.min.js"></script>
+<script src="prettyphoto/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+
+   <script type="text/javascript">
+		$(document).ready(function(){
+
+		$(".rollover").css({'opacity':'0'});
+		 
+		$('#gallery a.item').hover(
+			function() {
+				$(this).find('.rollover').stop().fadeTo(500, 1);
+			},
+			function() {
+				$(this).find('.rollover').stop().fadeTo(500, 0);
+			}
+		)
+		});
+	</script>
+</head>
+
+<body>
+<div id="container">
+	<!---BEGIN Header--->
+	<div id="header">
+    	<div id="header-logo"><h1>Where I Come From</h1></div>
+        <div id="header-tag"><h2>What's not to say here</h2></div>
+        <div id="header-social">
+        	<div id="header-rss"><a href="#"> log in by Facebook and twitter</a></div>
+        	<ul>
+                <li><a href="#" class="facebook">Facebook</a></li>
+                <li><a href="#" class="twitter">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!---BEGIN Slider--->
+    <div class="slider-wrapper theme-default">
+            <span id="slider-shadow"></span>
+            <div id="slider" class="nivoSlider">
+                <a href="#"><img src="images/slider/slider-img-1.jpg" alt="" title="#htmlcaption1" /></a>
+                <a href="#"><img src="images/slider/slider-img-2.jpg" alt="" title="#htmlcaption2" /></a>
+                <a href="#"><img src="images/slider/slider-img-3.jpg" alt="" title="#htmlcaption3" /></a>
+                <a href="#"><img src="images/slider/slider-img-4.jpg" alt="" title="#htmlcaption4" /></a>
+              
+            </div>
+            <div id="htmlcaption1" class="nivo-html-caption">
+                <strong>what I can do </strong> You have to believe in yourself . That''s the secret of success.You have to believe in yourself . That's the secret of success.
+            </div>
+            <div id="htmlcaption2" class="nivo-html-caption">
+                <strong>Cease to struggle and you cease to live.</strong> The good seaman is known in bad weather.Believe that god is fair.Don't aim for success if you want it; just do what you love and believe in, and it will come naturally.
+            <div id="htmlcaption3" class="nivo-html-caption">
+                <strong>All things come to those who wait.</strong> There's only one corner of the universe you can be sure of improving, and that's your own self.
+            he secret of success is constancy to purpose.
+            </div>
+        </div>
+            <div id="htmlcaption4" class="nivo-html-caption">
+                <strong>Gods determine what you're going to be.</strong> cLive a noble and honest life. Reviving past times in your old age will help you to enjoy your life again.
+                he secret of success is constancy to purpose.
+        </div>
+        
+        <!---BEGIN Portfolio Gallery--->
+        <div id="gallery">
+            <div id="title-divider"><h3>Portfolio Gallery</h3></div>
+            <a href="images/gallery/gallery-full1.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb1.jpg"/></a>
+            <a href="images/gallery/gallery-full2.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb2.jpg"/></a>
+            <a href="images/gallery/gallery-full3.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb3.jpg"/></a>
+            <a href="images/gallery/gallery-full4.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb4.jpg"/></a>
+            <a href="images/gallery/gallery-full5.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb5.jpg"/></a>
+            <a href="images/gallery/gallery-full6.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb6.jpg"/></a>
+            <a href="images/gallery/gallery-full7.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb7.jpg"/></a>
+            <a href="images/gallery/gallery-full8.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb8.jpg"/></a>
+            <a href="images/gallery/gallery-full9.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb9.jpg"/></a>
+            <a href="images/gallery/gallery-full10.jpg" class="item" rel="prettyPhoto[gallery1]"><span class="rollover"></span><span class="gallery-shadow"></span><img src="images/gallery/gallery-thumb10.jpg"/></a>
+        </div>
+        
+
+        
+        <div id="sub-container">
+        <!---BEGIN About Me--->
+        <div id="about">
+            <div id="title-sub-divider"><h3>About Me</h3></div>
+            <div id="about-col1">
+            <div id="about-photo">
+            	<span class="about-img-shadow"></span>
+            	<img src="images\about-photo.jpg" />
+            </div>
+            	<ul>
+                    <li><a href="#">Weixin</a><li>
+                    <li><a href="#">Facebook</a><li>
+                    <li><a href="#">Tiwtter</a><li>
+                    <li><a href="#">QQ</a><li>
+                
+                </ul>
+            </div>
+            <div id="about-col2">
+           <p>I have a wide range of hobbies, such as reading, singing, dancing and playing the piano. When I am free, I often read books for a while and play electronic organ for a while.</p>
+
+<p>Enthusiastic and easy-going, cheerful, enterprising spirit and team spirit, with strong practical potential. Good coordination and communication potential, strong adaptability, quick response, flexible heart, love innovation! Two years of accounting experience has trained my careful principles and the potential to calmly solve difficulties. However, due to my limited participation in practical activities and lack of social experience, I believe that I can constantly improve and develop myself by basing myself on the society. </p>
+            </div>
+        </div>
+        
+        <!---BEGIN Contact Form--->
+        <div id="contact">
+        <div id="title-sub-divider"><h3>Contact</h3></div>
+        	<form id="contact-form">
+                <input type="text" name="name" id="name" value="Your Name" />
+                <input type="text" name="email" id="email" value="Your Email Address" />
+                <textarea id="comment"></textarea>
+                <input type="submit" value="submit" id="submit" />
+                <a href="https://monkeynight.github.io/2/">点击这里可以去下一个界面</a></p>
+            </form>
+        </div>
+        
+        </div>
+</div>
+        
+<!---BEGIN Footer--->
+<div id="footer">
+	<div id="footer-container">
+    	<div id="footer-flickr">
+        <h3>Flickr</h3>
+            <a href="#" class="flickr-item"><span id="flickr-shadow"></span><img src="images/flickr/img1.jpg" /></a>
+            <a href="#" class="flickr-item"><span id="flickr-shadow"></span><img src="images/flickr/img2.jpg" /></a>
+            <a href="#" class="flickr-item"><span id="flickr-shadow"></span><img src="images/flickr/img3.jpg" /></a>
+
+        </div>
+        <div id="footer-facebook">
+        <h3>Facebook</h3>
+            <div id="fb-comment"><img src="images/flickr/img1.jpg" />One who has seen the ocean thinks nothing of mere rivers.
+
+            </div>
+            <div id="fb-comment"><img src="images/flickr/img2.jpg" />One who has seen the ocean thinks nothing of mere rivers .
+
+            </div>
+            <div id="fb-comment"><img src="images/flickr/img3.jpg" />One who has seen the ocean thinks nothing of mere rivers.
+
+            </div>
+        </div>
+        <div id="footer-tweet">
+        	<div id="footer-tweet-container">
+            	<h3>Tweet</h3>
+                <p>One who has seen the ocean thinks nothing of mere rivers. <a href="#">for free</a></p>
+                <p>counduct me. <a href="#">@798257u@email</a></p> 
+                <p><a href="#">@WelearnEnligsh</a> One who has seen the ocean thinks nothing of mere rivers. <a href="#">every day</a></p> 
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+    <script type="text/javascript" src="nivo/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+			effect:'random', 
+            slices:15,  
+            animSpeed:500, 
+            pauseTime:5000
+			});
+    });
+    </script>
+    
+    <script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		$("a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal', theme:'dark_rounded', social_tools:false, slideshow:false, autoplay_slideshow: false});
+		$(".image a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal', theme:'dark_rounded', social_tools:false, slideshow:false, autoplay_slideshow: false});
+	});
+	</script>
+</body>
+</html>
